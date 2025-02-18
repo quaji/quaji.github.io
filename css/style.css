@@ -16,12 +16,14 @@ header{
     border-bottom:solid #B10000; 
 }
 header #mainIcon{
+    top: 0;
     left: 0;
     position:fixed;
     margin: 5px 10px;
 }
 
 header #menuIcon{
+    top: 0;
     right: 0;
     position:fixed;
     margin: 5px;
@@ -34,22 +36,23 @@ main{
     grid-template-columns: 25% 50% 25%;
 }
 
-#calender{
-    margin: 10% 5%;
-    padding: 3% 2% 6% 2%;
-    background-color: rgb(32, 32, 32);
-    border-radius: 50px;
-    border: solid 1px rgba(127, 127, 127, 0.5);
-    box-shadow: 0 0 20px rgba(255, 255, 255,0.5),inset 0 0 10px rgba(0, 0, 0, 0.5);
-}
-#calender iframe{
-    aspect-ratio: 1/1;
-}
 
 footer{
     color: gray;
-    background-color: rgb(231, 231, 231);   
+    background-color: rgb(231, 231, 231);
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
+
+footer address{
+    padding: 20px 10px;
+    margin: 0 auto;
+}
+
 footer address ul, footer address ul *{
     margin: 0;
+}
+
+.cautionColor{
+    color: red;
 }
