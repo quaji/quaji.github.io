@@ -1,9 +1,10 @@
 main{
     width: 100%;
-    height: 2000px;
+    min-height: 1000px;
     display: grid;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 75% 25%;
 }
+
 
 div.sideContent{
     margin: 10% 5%;
@@ -14,13 +15,10 @@ div.sideContent{
     box-shadow: 0 0 20px rgba(255, 255, 255,0.5),inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-#calender iframe{
-    aspect-ratio: 1/1;
-}
 
 #centerContents div.centerContent{
-    margin: 5% 2.5%;
-    padding: 1.5% 1% 3% 1%;
+    margin: 3.33% 1.66%;
+    padding: 1% 0.66% 2% 0.66%;
     background-color: rgb(32, 32, 32);
     border-radius: 20px;
     border: solid 1px rgba(127, 127, 127, 0.5);
@@ -32,10 +30,14 @@ div.sideContent{
     overflow-y: auto;
 }
 
-#updates, #activity, #calender, #address{
+#works_programing, #works_photography, #works_music, #works_illustration #address{
     scroll-margin-top: 80px;
 }
 
 main a{
     color:rgb(213, 235, 255);
+}
+
+#introduction div {
+    margin: 1rem 3rem;
 }
