@@ -1,3 +1,6 @@
+*{
+    font-family: serif,sans-serif;
+}
 body{
     margin: 0;
     background-color: black;
@@ -11,25 +14,27 @@ header{
     width: 100%;
     padding: 0;
     margin: 0;
-    height: 60px;
+    /* height: 60px; */
+    min-height: 60px;
     background-color: white;
     border-bottom:solid #B10000; 
 }
 header #mainIcon{
     top: 0;
     left: 0;
-    position:fixed;
+    position:absolute;
     margin: 5px 10px;
 }
 
 header #menuIcon{
     top: 0;
     right: 0;
-    position:fixed;
+    position:absolute;
     margin: 5px;
 }
 
 main{
+    /* scroll-margin-top: 80px; */
     width: 100%;
     height: 2000px;
     display: grid;
@@ -39,6 +44,7 @@ main{
 
 footer{
     color: gray;
+    padding: 2rem 0;
     background-color: rgb(231, 231, 231);
     display: grid;
     grid-template-columns: 50% 50%;
@@ -55,4 +61,17 @@ footer address ul, footer address ul *{
 
 .cautionColor{
     color: red;
+}
+
+#hiddenMenu {
+    color: black;
+    font-size: 20px;
+    font-family: serif,sans-serif;
+    width: 100%;
+    height: 600px;
+    padding: 60px;
+    text-align: center;
+}
+#hiddenMenu div{
+    text-align: center;
 }
