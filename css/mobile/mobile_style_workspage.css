@@ -1,6 +1,6 @@
 @media (max-width:900px) {
     div.sideContent{
-        margin: 10% 5%;
+        margin: 2% 1%;
         padding: 3% 2% 6% 2%;
         background-color: rgb(32, 32, 32);
         border-radius: 20px;
@@ -10,8 +10,8 @@
     
     
     #centerContents div.centerContent{
-        margin: 3.33% 1.66%;
-        padding: 1% 0.66% 2% 0.66%;
+        margin: 2% 1%;
+        padding: 3% 2% 6% 2%;
         background-color: rgb(32, 32, 32);
         border-radius: 20px;
         border: solid 1px rgba(127, 127, 127, 0.5);
