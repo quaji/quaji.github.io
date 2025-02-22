@@ -1,6 +1,7 @@
 main{
     width: 100%;
     min-height: 1000px;
+    height: auto;
     display: grid;
     grid-template-columns: 75% 25%;
 }
@@ -30,7 +31,7 @@ div.sideContent{
     overflow-y: auto;
 }
 
-#introduction, #address{
+#news, #address{
     scroll-margin-top: 80px;
 }
 

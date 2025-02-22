@@ -1,0 +1,110 @@
+@media (max-width:900px) {
+    *{
+        font-family: serif,sans-serif;
+    }
+    :root{
+        --hidden-menu-font-size: 1rem;
+    }
+    
+    main{
+        width: 100%;
+        min-height: 300px;
+        height: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-auto-flow: row;
+        
+    }
+    
+    #leftContents{
+        order: 3;
+    }
+    #centerContents{
+        order: 2;
+    }
+    #rightContents{
+        order: 1;
+    }
+    
+    body{
+        margin: 0;
+        background-color: black;
+        color:white;
+    }
+    
+    header{
+        position: sticky;
+        top:0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        min-height: 7.5svh;
+        background-color: white;
+        border-bottom:solid #B10000; 
+    }
+    header img#mainIcon{
+        top: 0;
+        left: 0;
+        position:absolute;
+        height: 6.25svh;
+        margin: 0.625svh 1.25svh;
+        aspect-ratio: 1/1;
+    }
+    
+    header img#menuIcon{
+        top: 0;
+        right: 0;
+        position:absolute;
+        height: 6.25svh;
+        margin: 0.625svh 1.25svh;
+    }
+    
+    header #mainIcon:hover,header #menuIcon:hover{
+        opacity: 0.5;
+    }
+    
+    #hiddenMenu {
+        color: black;
+        font-size: var(--hidden-menu-font-size);
+        font-family: serif,sans-serif;
+        height: 300px;
+        padding: 60px;
+        text-align: center;
+    }
+    #hiddenMenu div{
+        font-size: var(--hidden-menu-font-size);
+        text-align: center;
+        margin: calc(var(--hidden-menu-font-size));
+    }
+    
+    #hiddenMenu div a{
+        color:black;
+    }
+    
+    #hiddenMenu div.currentPage {
+        font-size: calc(var(--hidden-menu-font-size)*2);
+    }
+    
+    footer{
+        color: gray;
+        padding: 2rem 0;
+        background-color: rgb(231, 231, 231);
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+    footer address{
+        padding: 20px 10px;
+        margin: 0 auto;
+    }
+    
+    footer address ul, footer address ul *{
+        margin: 0;
+    }
+    
+    .cautionColor{
+        color: red;
+    }
+    
+    
+}
