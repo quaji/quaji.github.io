@@ -1,0 +1,71 @@
+main{
+    width: 100%;
+    min-height: 2000px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+div.sideContent{
+    margin: 10% 5%;
+    padding: 3% 2% 6% 2%;
+    background-color: rgb(32, 32, 32);
+    border-radius: 20px;
+    border: solid 1px rgba(127, 127, 127, 0.5);
+    box-shadow: 0 0 20px rgba(255, 255, 255,0.5),inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+#centerContents div.centerContent{
+    margin: 5% 2.5%;
+    padding: 1.5% 1% 3% 1%;
+    background-color: rgb(32, 32, 32);
+    border-radius: 20px;
+    border: solid 1px rgba(127, 127, 127, 0.5);
+    box-shadow: 0 0 20px rgba(255, 255, 255,0.5),inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#blog, #archives, #address{
+    scroll-margin-top: 80px;
+}
+
+main a{
+    color:rgb(213, 235, 255);
+}
+
+#blogContents .articleCon .articleData{
+    margin: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 0.1px gray;
+}
+
+
+#blogContents .articleCon .articleData *{
+    font-size: 28px;
+    text-decoration: underline 0.1px;
+    margin: auto 10px;
+}
+
+#blogContents .articleCon .articleText{
+    margin: 10px 5px;
+}
+
+#blogContents .articleCon .articlePhoto{
+    margin: 10px 5px;
+    border-top: solid 0.1px gray;
+}
+
+#blogContents .articleCon .articlePhoto img{
+    width: 90%;
+    height: auto;
+}
+
+#blogContents .articleCon {
+    color:black;
+    background-color: rgb(255, 255, 255);
+    border: solid 0.1px gray;
+    margin: 5px;
+    padding: 5px 2px;
+    border-radius: 3px;
+}

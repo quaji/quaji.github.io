@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/style_workspage.css">
+    <link rel="stylesheet" href="./css/style_blogpage.css">
     <link rel="stylesheet" href="./css/mobile/mobile_style.css">
-    <link rel="stylesheet" href="./css/mobile/mobile_style_workspage.css">
+    <link rel="stylesheet" href="./css/mobile/mobile_style_blogpage.css">
     <script src="./js/hidden_menu.js" defer></script>
+    <script src="./js/blog_contents.js" defer></script>
     <title>ノセ/QuajiのLinks</title>
 </head>
 <body>
@@ -17,71 +18,41 @@
         <div id="hiddenMenu" hidden>
             <h3>I am the hidden menu</h3>
             <div id="Home"><a href="https://quaji.github.io/">Home</a></div>
-            <div id="Blog"><a href="https://quaji.github.io/blog.html">Blog</a></div>
+            <div id="Blog" class="currentPage"><a href="https://quaji.github.io/blog.html">Blog</a></div>
             <div id="News"><a href="https://quaji.github.io/news.html">News</a></div>
             <div id="Introduction"><a href="https://quaji.github.io/introduction.html">Introduction</a></div>
-            <div id="Works" class="currentPage"><a href="https://quaji.github.io/works.html">Works</a></div>
+            <div id="Works"><a href="https://quaji.github.io/works.html">Works</a></div>
         </div>
     </header>
     
 
     <main>
         <div id="centerContents">
-            <div id="works_programing" class="centerContent">
-                <h1>PROGRAMING</h1>
+            <div id="blog" class="centerContent">
+                <h1>BLOG</h1>
+                <div id="blogContents" class="scrollArea">
+                    
+                </div>
+
+            </div>
+            
+            <div id="archives" class="centerContent">
+                <h1>ARCHIVES</h1>
                 <div class="scrollArea">
                     <ul>
-                        <li>成績照会ページ解析サイト <a href="https://quaji.github.io/ForTCUCampusmates/">https://quaji.github.io/ForTCUCampusmates/</a></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        NONE YET.
                     </ul>
                 </div>
             </div>
             
-            <div id="works_photography" class="centerContent">
-                <h1>PHOTOGRAPHY</h1>
-                <div class="scrollArea">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div id="works_music" class="centerContent">
-                <h1>MUSIC</h1>
-                <div class="scrollArea">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="works_illustration" class="centerContent">
-                <h1>ILLUSTRATION</h1>
-                <div class="scrollArea">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
-
         </div>
         <div id="rightContents">
             <!-- TOC(目次)を作成するところ。 -->
             <div id="TOC" class="sideContent">
                 <h2>ITEMS</h2>
                 <ul>
-                    <li><a href="#works_programing">WORKS(PROGRAMING)</a></li>
-                    <li><a href="#works_photography">WORKS(PHOTOGRAPHY)</a></li>
-                    <li><a href="#works_music">WORKS(MUSIC)</a></li>
-                    <li><a href="#works_illustration">WORKS(ILLUSTRATION)</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#archives">ACTIVITIES</a></li>
                     <li><a href="#address">各種SNS/連絡先</a></li>
                 </ul>
             </div>
