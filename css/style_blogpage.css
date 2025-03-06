@@ -61,6 +61,19 @@ main a{
     height: auto;
 }
 
+#blogContents .articleCon .showMore {
+    margin: 10px 5px;
+    color: gray;
+    cursor: pointer;
+    display: flex;
+    border-top: solid 0px gray;
+    justify-content: end;
+}
+
+#blogContents .articleCon .showMore:hover {
+    color:  lightblue;
+}
+
 #blogContents .articleCon {
     color:black;
     background-color: rgb(255, 255, 255);
