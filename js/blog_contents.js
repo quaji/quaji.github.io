@@ -29,7 +29,8 @@ fetch("json/blog.json")
 
             const text = document.createElement("div");
             text.className = "articleText";
-            text.textContent = item.text;
+            // text.textContent = item.text;
+            text.innerHTML = item.text;
             
 
             article.appendChild(data);
