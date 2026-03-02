@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 const worksData = {
   programming: [
-    { title: '成績照会ページ解析サイト', url: 'https://quaji.github.io/ForTCUCampusmates/', description: 'Webアプリケーション' },
-    { title: 'impression,Raison', url: 'https://lemon-water-022469c10.6.azurestaticapps.net/', description: 'Webアプリケーション' },
-    { title: '魚の遊泳の3Dシミュレーション', url: '#', description: 'Interactive Media課題・OpenGLを用いた3Dレンダリング' },
+    { title: '成績照会ページ解析サイト', url: 'https://quaji.github.io/ForTCUCampusmates/', description: 'Webアプリケーション' ,details:"所属大学の成績照会ページをpdfとして出力したものをアップロードすると、成績をグラフ化して表示するサイト。JavaScriptのDOM操作とCanvas APIを使用して実装。スクレイピングはグレーゾーンなため、ユーザーが自分でpdfをアップロードする形式にしている。"},
+    { title: 'impression,Raison', url: 'https://lemon-water-022469c10.6.azurestaticapps.net/', description: 'Webアプリケーション' ,details:"個人的に作成したかったタスク管理サイトで、pythonのFlaskをバックエンドに、フロントエンドはJavaScriptで実装。コストからサーバ維持が難しくなっていたため、現在は開発を取りやめた。"},
+    { title: '魚の遊泳の3Dシミュレーション', url: None, description: 'Interactive Media課題・OpenGLを用いた3Dレンダリング' },
     { title: 'pygameによる2D物理シミュレーション', url: '#', description: 'Pythonを用いた円の衝突判定と物理演算' }
   ],
   photography: [
@@ -30,6 +30,7 @@ function Portfolio() {
                 {item.title}
               </a>
               <p style={{ margin: '0.2rem 0', color: '#ccc' }}>{item.description}</p>
+              <p style={{ margin: '0.2rem 0', color: '#ccc' }}>{item.details}</p>
             </li>
           ))}
         </ul>
