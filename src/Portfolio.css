@@ -1,18 +1,12 @@
-body,main {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-     font-family: 'Arial', sans-serif;
-     text-align: center;
-    /* フォールバック用の背景色（画像読み込み失敗時や透過部分に適用） */
+/* src/Portfolio.css */
+.portfolio-bg {
+    /* 画面の高さ100%を保証する */
+    min-height: 100vh;
+    width: 100%;
+    
     background-color: #000000; 
-    
-    /* テクスチャ画像のパスを指定。画像は public/media/ 配下に置くこと */
     background-image: url('/media/texture.jpg'); 
-    
-    /* テクスチャの繰り返しとスクロール時の挙動制御 */
     background-repeat: repeat; 
     background-attachment: fixed; 
-    
     color: #ffffff;
 }
