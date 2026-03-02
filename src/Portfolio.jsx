@@ -27,9 +27,18 @@ function Portfolio() {
         <ul>
           {items.map((item, index) => (
             <li key={index} style={{ marginBottom: '1rem' }}>
-              <a href={item.url} target="_blank" rel="noopener noreferrer" style={{ color: 'lightblue', fontSize: '1.2rem' }}>
-                {item.title}
-              </a>
+              
+              {/* 三項演算子による分岐 */}
+              {item.url ? (
+                <a href={item.url} target="_blank" rel="noopener noreferrer" style={{ color: 'lightblue', fontSize: '1.2rem' }}>
+                  {item.title}
+                </a>
+              ) : (
+                <span style={{ color: 'white', fontSize: '1.2rem', fontWeight: 'bold' }}>
+                  {item.title}
+                </span>
+              )}
+              
               <p style={{ margin: '0.2rem 0', color: '#ccc' }}>{item.description}</p>
               <p style={{ margin: '0.2rem 0', color: '#ccc' }}>{item.details}</p>
             </li>
