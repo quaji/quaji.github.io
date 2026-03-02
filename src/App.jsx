@@ -1,43 +1,35 @@
-// src/App.jsx
-import React from 'react';
-import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Portfolio from './Portfolio';
-import './style.css'; 
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
 
-// 元のトップページ
-function Home() {
+function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <main style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', paddingTop: '20svh' }}>
-      <h1 style={{ textAlign: 'center', color: 'red' }}>只今改装中</h1>
-      <img 
-        id="now_status" 
-        src="/media/job_kouji_ojigi.png" 
-        alt="現在改装中。しばらくお待ちください。"   
-        style={{ width: '60vw', marginLeft: 'auto', marginRight: 'auto', marginBottom: '2rem' }} 
-      />
-      <div style={{ display: 'flex', gap: '2rem' }}>
-        <Link to="/portfolio" style={{ color: 'lightblue', fontSize: '1.2rem' }}>
-          ポートフォリオを見る
-        </Link>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSety6tacmGNk_qCOJ4qnDdkoa3TkB0rKTD-xWXGcKBfWYHIGA/viewform?usp=dialog" style={{ color: 'lightblue', fontSize: '1.2rem' }}>
-          連絡はこちらまで。
+    <>
+      <div>
+        <a href="https://vite.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-    </main>
-  );
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </>
+  )
 }
 
-// ルーティング設定
-function App() {
-  return (
-    // GitHub Pagesでのデプロイを安定させるため、BrowserRouterではなくHashRouterを使用します
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-      </Routes>
-    </Router>
-  );
-}
-
-export default App;
+export default App
