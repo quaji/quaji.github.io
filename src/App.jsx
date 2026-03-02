@@ -7,7 +7,7 @@ import './style.css';
 // 元のトップページ
 function Home() {
   return (
-    <main style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', paddingTop: '20svh' }}>
+    <main style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
       <h1 style={{ textAlign: 'center', color: 'red' }}>只今改装中</h1>
       <img 
         id="now_status" 
