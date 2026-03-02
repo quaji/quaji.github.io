@@ -21,6 +21,7 @@ const worksData = {
 
 function Portfolio() {
   const renderSection = (title, items) => (
+    <main style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' ,backgroundColor: '#000000', backgroundImage: `url('/media/texture.jpg')` }}>
     <div style={{ marginBottom: '2rem' }}>
       <h2 style={{ borderBottom: '1px solid gray', paddingBottom: '0.5rem' }}>{title}</h2>
       {items.length > 0 ? (
@@ -39,6 +40,7 @@ function Portfolio() {
         <p style={{ color: 'gray' }}>NONE YET.</p>
       )}
     </div>
+    </main>
   );
 
   return (
