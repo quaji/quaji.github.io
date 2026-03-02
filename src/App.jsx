@@ -13,13 +13,13 @@ function Home() {
         id="now_status" 
         src="/media/job_kouji_ojigi.png" 
         alt="現在改装中。しばらくお待ちください。"   
-        style={{ width: '60vw', marginLeft: 'auto', marginRight: 'auto', marginBottom: '2rem' }} 
+        style={{ width: '60vh', marginLeft: 'auto', marginRight: 'auto', marginBottom: '2rem' , animation: 'bounce 2s infinite' , animationTimingFunction: 'ease-in-out' , animationDirection: 'alternate' , animationFillMode: 'both'}} 
       />
       <div style={{ display: 'flex', gap: '2rem' }}>
-        <Link to="/portfolio" style={{ color: 'lightblue', fontSize: '1.2rem' }}>
+        <Link to="/portfolio" style={{ color: 'black', fontSize: '1.2rem' }}>
           ポートフォリオを見る
         </Link>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSety6tacmGNk_qCOJ4qnDdkoa3TkB0rKTD-xWXGcKBfWYHIGA/viewform?usp=dialog" style={{ color: 'lightblue', fontSize: '1.2rem' }}>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSety6tacmGNk_qCOJ4qnDdkoa3TkB0rKTD-xWXGcKBfWYHIGA/viewform?usp=dialog" style={{ color: 'black', fontSize: '1.2rem' }}>
           連絡はこちらまで。
         </a>
       </div>
