@@ -1,5 +1,9 @@
-body {
-    margin: 0;
+body,main {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Arial', sans-serif;
+     text-align: center;
     /* フォールバック用の背景色（画像読み込み失敗時や透過部分に適用） */
     background-color: #000000; 
     
