@@ -7,14 +7,14 @@ const worksData = {
   programming: [
     { title: '成績照会ページ解析サイト', url: 'https://quaji.github.io/ForTCUCampusmates/', description: 'Webアプリケーション' ,details:"所属大学の成績照会ページをpdfとして出力したものをアップロードすると、成績をグラフ化して表示するサイト。JavaScriptのDOM操作とCanvas APIを使用して実装。スクレイピングはグレーゾーンなため、ユーザーが自分でpdfをアップロードする形式にしている。"},
     { title: 'impression,Raison', url: 'https://lemon-water-022469c10.6.azurestaticapps.net/', description: 'Webアプリケーション' ,details:"個人的に作成したかったタスク管理サイトで、pythonのFlaskをバックエンドに、フロントエンドはJavaScriptで実装。コストからサーバ維持が難しくなっていたため、現在は開発を取りやめた。"},
-    { title: '魚の遊泳の3Dシミュレーション', url: None, description: 'Interactive Media課題・OpenGLを用いた3Dレンダリング',details:"" },
-    { title: 'pygameによる2D物理シミュレーション', url: None, description: 'Pythonを用いた円の衝突判定と物理演算' ,details:""}
+    { title: '魚の遊泳の3Dシミュレーション', url: '', description: 'Interactive Media課題・OpenGLを用いた3Dレンダリング',details:"" },
+    { title: 'pygameによる2D物理シミュレーション', url: '', description: 'Pythonを用いた円の衝突判定と物理演算' ,details:""}
   ],
   photography: [
-    { title: 'Film & Digital Photography', url: None, description: '写真作品群' ,details:""}
+    { title: 'Film & Digital Photography', url: '', description: '写真作品群' ,details:""}
   ],
   music: [
-    { title: 'Acoustic Guitar Covers', url: None, description: 'Jazz / Celtic音楽のアコースティックギター演奏' ,details:""}
+    { title: 'Acoustic Guitar Covers', url: '', description: 'Jazz / Celtic音楽のアコースティックギター演奏' ,details:""}
   ],
   illustration: []
 };
