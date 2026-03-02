@@ -2,13 +2,12 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Portfolio from './Portfolio';
-import './style.css'; 
 import './App.css';
 
 // 元のトップページ
 function Home() {
   return (
-    <main style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+    <main style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' ,backgroundColor: '#ffff00'}}>
       <h1 style={{ textAlign: 'center', color: 'red' }}>只今改装中</h1>
       <img 
         id="now_status" 

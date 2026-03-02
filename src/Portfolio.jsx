@@ -51,7 +51,7 @@ function Portfolio() {
       {renderSection('ILLUSTRATION', worksData.illustration)}
 
       <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-        <Link to="/" style={{ color: 'black', fontSize: '1.2rem', textDecoration: 'underline' }}>ホームに戻る</Link>
+        <Link to="/" className="links" style={{ color: 'white', fontSize: '1.2rem', textDecoration: 'underline' }}>ホームに戻る</Link>
       </div>
     </div>
   );
