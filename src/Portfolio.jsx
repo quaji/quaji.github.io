@@ -1,7 +1,7 @@
 // src/Portfolio.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import 'Portfolio.css';
+import './Portfolio.css';
 
 const worksData = {
   programming: [
