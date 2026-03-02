@@ -13,7 +13,7 @@ function Home() {
         id="now_status" 
         src="/media/job_kouji_ojigi.png" 
         alt="現在改装中。しばらくお待ちください。"   
-        style={{ width: '60vh', marginLeft: 'auto', marginRight: 'auto', marginBottom: '2rem' , animation: 'bounce 2s infinite' , animationTimingFunction: 'ease-in-out' , animationDirection: 'alternate' , animationFillMode: 'both'}} 
+        style={{ width: '50%', margin: '0 auto 2rem', animation: 'bounce 2s infinite' , animationTimingFunction: 'ease-in-out' , animationDirection: 'alternate' , animationFillMode: 'both'}} 
       />
       <div style={{ display: 'flex', gap: '2rem' }}>
         <Link to="/portfolio" style={{ color: 'black', fontSize: '1.2rem' }}>
