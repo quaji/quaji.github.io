@@ -44,16 +44,20 @@ function Portfolio() {
   );
 
   return (
-    <div style={{ width: '80%', maxWidth: '800px', margin: '0 auto', paddingTop: '5svh' }}>
-      <h1 style={{ textAlign: 'center', marginBottom: '3rem' }}>WORKS</h1>
-      
-      {renderSection('PROGRAMMING', worksData.programming)}
-      {renderSection('PHOTOGRAPHY', worksData.photography)}
-      {renderSection('MUSIC', worksData.music)}
-      {renderSection('ILLUSTRATION', worksData.illustration)}
+    /* 一番外側を背景用のdivでラップする */
+    <div className="portfolio-bg">
+      <div style={{ width: '80%', maxWidth: '800px', margin: '0 auto', paddingTop: '5svh', paddingBottom: '5svh' }}>
+        <h1 style={{ textAlign: 'center', marginBottom: '3rem' }}>WORKS</h1>
+        
+        {renderSection('PROGRAMMING', worksData.programming)}
+        {renderSection('PHOTOGRAPHY', worksData.photography)}
+        {renderSection('MUSIC', worksData.music)}
+        {renderSection('ILLUSTRATION', worksData.illustration)}
 
-      <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-        <Link to="/" className="links" style={{ color: 'white', fontSize: '1.2rem', textDecoration: 'underline' }}>ホームに戻る</Link>
+        <div style={{ textAlign: 'center', marginTop: '3rem' }}>
+          {/* 背景が暗いため、リンクの色を白系(white)に修正して視認性を確保 */}
+          <Link to="/" style={{ color: 'white', fontSize: '1.2rem', textDecoration: 'underline' }}>ホームに戻る</Link>
+        </div>
       </div>
     </div>
   );
