@@ -1,8 +1,13 @@
-body,main{
-    background-color: #696969;
-}
-
 .links:hover {
     opacity: 0.5;
     text-decoration: underline;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-20px);
+    }
 }

@@ -7,6 +7,6 @@
     background-color: #000000; 
     background-image: url('/media/texture.jpg'); 
     background-repeat: repeat; 
-    background-attachment: fixed; 
+    background-attachment: scroll;
     color: #ffffff;
 }
